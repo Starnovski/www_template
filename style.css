@@ -1,5 +1,5 @@
 nav {
-  background-color: #000000;
+  background-color: #212529;
   width: 100%;
   height: 4rem;
   display: flex;
@@ -9,7 +9,7 @@ nav {
 nav .navbutton {
   display: inline-block;
   color: white;
-  background-color: black;
+  background-color: #212529;
   height: 4rem;
   min-width: 6rem;
   padding: 1.1rem;
@@ -25,7 +25,8 @@ nav .navbutton {
 }
 
 footer {
-  background-color: black;
+  background-color: #212529;
+  color: white;
   width: 100%;
   min-height: 6rem;
   display: flex;
@@ -56,6 +57,9 @@ rect {
 #space {
   min-height: 40rem;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 19rem;
 }
 
 #content {
@@ -94,6 +98,16 @@ rect {
   margin-top: -39px;
   border-top-right-radius: 81%;
 }
+#main::after {
+  width: 100%;
+  content: "";
+  margin-top: 4rem;
+  background-color: #212529;
+  height: 2rem;
+  display: inherit;
+  margin-bottom: -3rem;
+  border-top-right-radius: 80%;
+}
 
 #list {
   float: left;
@@ -120,6 +134,40 @@ rect {
     min-height: 100px;
     margin-top: 2rem;
   }
+}
+
+#comments {
+  margin-top: 2rem;
+  border-radius: 4px;
+  background-image: linear-gradient(90deg, #ffffff 0%, #16f7b0 100%);
+}
+
+#com_title {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+#com_text {
+  width: 80%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form {
+  width: 300px;
+}
+
+.btn-search {
+  width: inherit;
+}
+
+.search {
+  width: 300px;
+  line-height: 2rem;
+  font-size: 20px;
 }
 
 .list-item {
@@ -149,7 +197,7 @@ rect {
 .drop {
   display: inline-block;
   color: white;
-  background-color: black;
+  background-color: #212529;
   height: 4rem;
   min-width: 6rem;
   padding: 1.1rem;
@@ -174,6 +222,21 @@ rect {
 .dropdown_menu a {
   display: inherit;
   margin-bottom: 1rem;
+}
+
+.comment {
+  margin-top: 2rem;
+  border-top-style: solid;
+  border-top-width: 1px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.comment h5 {
+  color: blue;
+}
+.comment h6 {
+  color: grey;
 }
 
 /*# sourceMappingURL=style.css.map */
