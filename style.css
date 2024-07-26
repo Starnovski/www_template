@@ -3,7 +3,7 @@ nav {
   width: 100%;
   height: 4rem;
   display: flex;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
 }
 nav .navbutton {
@@ -42,6 +42,7 @@ footer {
 
 rect {
   transform-origin: center;
+  opacity: 20%;
 }
 
 #photo {
@@ -154,6 +155,60 @@ rect {
   height: 200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#gradient {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(111deg, #474c51 0%, #212529 100%);
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+}
+@media (max-width: 1200px) {
+  #gradient {
+    height: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+#grid-container {
+  display: grid;
+  width: 800px;
+  margin: auto;
+  grid-template-columns: auto auto;
+  grid-gap: 1%;
+}
+@media (max-width: 768px) {
+  #grid-container {
+    display: flex-wrap;
+    height: auto;
+    width: 90%;
+    grid-template-columns: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+.grid-item {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.grid-item-1 {
+  grid-column: 1/span 3;
+}
+@media (max-width: 768px) {
+  .grid-item-1 {
+    grid-column: 1;
+    display: flex;
+  }
 }
 
 .search-form {
